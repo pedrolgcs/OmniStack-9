@@ -6,6 +6,7 @@ import multerConfig from './config/multer';
 import SessionController from './app/controllers/SessionController';
 import SpotController from './app/controllers/SpotController';
 import DashboardController from './app/controllers/DashboardController';
+import BookingController from './app/controllers/BookingController';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -22,5 +23,8 @@ routes.post('/spots', upload.single('thumbnail'), SpotController.store);
 
 // Dashboard
 routes.get('/dashboard', DashboardController.show);
+
+// Booking
+routes.post('/spots/:spot_id/bookings', BookingController.store);
 
 export default routes;
