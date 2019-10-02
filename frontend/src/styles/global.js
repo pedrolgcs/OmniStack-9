@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import background from '../assets/background.jpg';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
   * {
     margin: 0;
@@ -10,8 +11,14 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body, #root {
+    min-height: 100%;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
+    background: #000 url(${background}) no-repeat;
+    background-size: cover;
   }
 
   body, input button {
@@ -20,11 +27,5 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
-  }
-
-  #root {
-    max-width: 1020px;
-    margin: 0 auto;
-    padding: 0 20px 50px;
   }
 `;
