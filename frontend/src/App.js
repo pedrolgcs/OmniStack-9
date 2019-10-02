@@ -1,5 +1,8 @@
 import React from 'react';
 
+// config
+import './config/ReactotronConfig';
+
 // styles
 import GlobalStyle from './styles/global';
 
