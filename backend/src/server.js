@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import server from "./app";
+import server from './app';
 
 const port = process.env.PORT || 3333;
 
