@@ -2,9 +2,9 @@ import React from 'react';
 import { Router } from 'react-router-dom';
 // config
 import './config/ReactotronConfig';
-import history from './services/history';
 // routes
 import Routes from './routes';
+import history from './services/history';
 // styles
 import GlobalStyle from './styles/global';
 

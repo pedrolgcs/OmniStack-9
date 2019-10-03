@@ -2,20 +2,6 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 80px auto 0;
-  max-width: 450px;
-`;
-
-export const Content = styled.div`
-  width: 100%;
-  background: #fff;
-  margin-top: 50px;
-  border-radius: 4px;
-  padding: 30px;
-
   > p {
     font-size: 22px;
     line-height: 30px;
