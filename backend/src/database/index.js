@@ -10,6 +10,7 @@ class Database {
       'mongodb://localhost:27017/aircnc',
       {
         useNewUrlParser: true,
+        useCreateIndex: true,
         useFindAndModify: true,
         useUnifiedTopology: true,
       }
