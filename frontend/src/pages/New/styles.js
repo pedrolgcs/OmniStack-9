@@ -16,6 +16,12 @@ export const Container = styled.div`
       color: #444;
       font-weight: bold;
       margin-bottom: 8px;
+
+      span {
+        font-weight: normal;
+        font-size: 12px;
+        color: #999;
+      }
     }
 
     input {
@@ -26,5 +32,20 @@ export const Container = styled.div`
       padding: 0 15px;
       font-size: 16px;
     }
+  }
+`;
+
+export const ImageLabel = styled.label`
+  margin-bottom: 20px;
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    display: none;
   }
 `;
